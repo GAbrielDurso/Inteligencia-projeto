@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub de Materiais</title>
+    <title>Hub de Materiais | Seu Guia de Estudos</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Hub de Materiais 📚</h1>
-        <p>Tudo organizado para você não perder o foco.</p>
-    </header>
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>🎓 HubEdu</h2>
+        </div>
+        <nav class="menu">
+            <a href="#" class="item-menu ativo">📚 Meu Mural</a>
+            <a href="#" class="item-menu">📅 Cronograma</a>
+            <a href="#" class="item-menu">⚙️ Ajustes</a>
+        </nav>
+    </aside>
 
-    <main>
-        <section class="topico-aula">
-            <h2>🧬 Biologia: Aula de Genética</h2>
+    <main class="conteudo-principal">
+        <header class="cabecalho-aula">
+            <span class="tag-materia">Matéria</span>
+            <h1>Título do Tópico 📚</h1>
+            <p>Descrição curta sobre o conteúdo desta aula.</p>
+        </header>
+
+        <section class="grid-materiais">
+            <article class="cartao border-red">
+                <div class="icone-cartao">📄</div>
+                <h3>Material 1</h3>
+                <p>Descrição do arquivo.</p>
+                <button class="btn-acao">Abrir PDF</button>
+            </article>
             
-            <div class="mural">
-                <div class="cartao pdf">
-                    <h3>Resumo do Professor</h3>
-                    <p>Arquivo .PDF</p>
-                </div>
-                
-                <div class="cartao video">
-                    <h3>Videoaula - DNA e RNA</h3>
-                    <p>Link do YouTube</p>
-                </div>
-                
-                <div class="cartao foto">
-                    <h3>Foto da Lousa</h3>
-                    <p>Arquivo .JPG</p>
-                </div>
-            </div>
+            <article class="cartao border-blue">
+                <div class="icone-cartao">🎥</div>
+                <h3>Videoaula</h3>
+                <p>Descrição do vídeo.</p>
+                <button class="btn-acao">Assistir</button>
+            </article>
+            
+            <article class="cartao border-yellow">
+                <div class="icone-cartao">📸</div>
+                <h3>Foto / Anotação</h3>
+                <p>Descrição da imagem.</p>
+                <button class="btn-acao">Ver Imagem</button>
+            </article>
         </section>
     </main>
 
